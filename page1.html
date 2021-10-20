@@ -1,0 +1,79 @@
+<h1> Ma page 1 </h1>
+<p> Retour à <a href="index.html" title="accueil du site"> l'accueil</a></p>
+<table border=1>
+	<thead>
+		<tr>
+			<th>Titre1</th>
+			<th>Titre2</th>
+			<th>Titre3</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Cellule Simple</td>
+			<td>Cellule Simple</td>
+			<td align=center>Cellule Simple</td>
+		</tr>
+		<tr>
+			<td colspan=2 align=center>Double colonnes</td>
+			<td align=center>Cellule Simple</td>
+		</tr>
+		<tr>
+			<td>Cellule Simple</td>
+			<td>Cellule Simple</td>
+			<td rowspan = 2 valign=TOP>Double lignes avec alignement verticle en haut</td>
+		</tr>
+		<tr>
+			<td>Cellule Simple</td>
+			<td>Cellule Simple</td>
+		</tr>
+		<tr>
+			<td>Cellule Simple</td>
+			<td colspan=2 rowspan=2>Double lignes & colonnes</td>
+		</tr>
+		<tr>
+			<td>Cellule Simple</td>
+		</tr>
+	</tbody>
+	
+
+</table>
+<br><hr>
+<form method="post" action ="" id = "form1">
+	<table>
+		<thead>
+			<tr>
+				<th rowspan =2 align="center">Formulaire d'inscription<hr></th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			<tr>
+				<td>Nom *:</td>
+				<td><input type="text" name="name" placeholder="Votre nom"> </td>
+			</tr>
+			<tr>
+				<td>Prenom *:</td>
+				<td><input type="text" name="fname" placeholder="Votre prénom"> </td>
+			</tr>
+			<tr>
+				<td>Date de naissance *:</td>
+				<td><input type="text" name="dob" placeholder="dd/mm/yy"> </td>
+			</tr>
+			<tr>
+				<td>Adresse *:</td>
+				<td><input type="text" name="adress" placeholder="Votre adresse"> </td>
+			</tr>
+			<tr>
+				<td>Pays *:</td>
+				<td><select type="select" name="cntr" > <option value="">France</option> <option value="">Allemagne</option> <option value="">Espagne</option> </select></td>
+			</tr>
+			<tr>
+				<td>Ville *:</td>
+				<td><select type="select" name="city" > <option value="">Paris</option> <option value="">Berlin</option> <option value="">Madrid</option></select></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<button type="submit" form="form1" value="Submit"> Soumettre </button>
