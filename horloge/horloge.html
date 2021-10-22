@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<body onload="horloge()">
+
+	<h1 > Horloge en Javascript</h1>
+
+	<h2>
+		<div id="clock"></div>
+		<div id="dateday"></div>
+	</h2>
+		<script>
+		function horloge() {
+			const today = new Date();
+			let h = today.getHours();
+			let m = today.getMinutes();
+			let s = today.getSeconds();
+			let d = today.getDate();
+			let mo= today.getMonth() + 1;
+			let y = today.getFullYear();
+			m = padding(m);
+			s = padding(s);
+			document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+			document.getElementById('dateday').innerHTML =  d + "/" + mo + "/" + y;
+			setTimeout(horloge, 1000);
+		  
+		}
+
+		function padding(i) {
+		  if (i < 10) {i = "0" + i}; 
+		  return i;
+		}
+		</script>
+
+	</body>
+</html>
